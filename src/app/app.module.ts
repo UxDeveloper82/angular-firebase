@@ -29,6 +29,9 @@ import { environment } from 'src/environments/environment';
 import { ProductFormComponent } from './admin/product-form/product-form.component';
 import { FormsModule } from '@angular/forms';
 
+import { HttpClientModule } from '@angular/common/http';
+import { ValueComponent } from './value/value.component';
+
 
 
 @NgModule({
@@ -44,12 +47,15 @@ import { FormsModule } from '@angular/forms';
     OrderSuccessComponent,
     ShoppingCartComponent,
     AdminProductsComponent,
-    ProductFormComponent
+    ProductFormComponent,
+    ValueComponent,
+
 
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     CustomFormsModule,
     RouterModule.forRoot(appRoutes),
     NgbModule,

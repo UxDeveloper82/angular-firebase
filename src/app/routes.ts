@@ -10,6 +10,7 @@ import { AdminOrdersComponent } from './admin/admin-orders/admin-orders.componen
 import { AdminProductsComponent } from './admin/admin-products/admin-products.component';
 import { AuthGuard } from './_services/auth.guard';
 import { ProductFormComponent } from './admin/product-form/product-form.component';
+import { ValueComponent } from './value/value.component';
 
 export const appRoutes: Routes = [
 
@@ -17,6 +18,7 @@ export const appRoutes: Routes = [
   { path: 'products', component: ProductsComponent},
   { path: 'shopping-cart', component: ShoppingCartComponent},
   { path: 'login', component: LoginComponent},
+  { path: 'values', component: ValueComponent},
 
   { path: 'check-out', component: CheckOutComponent, canActivate: [AuthGuard]},
   { path: 'order-success', component: OrderSuccessComponent, canActivate: [AuthGuard]},
